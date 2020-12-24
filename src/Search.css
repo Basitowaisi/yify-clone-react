@@ -1,0 +1,7 @@
+.Movies {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem 0rem 2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+}

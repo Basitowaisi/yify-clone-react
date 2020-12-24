@@ -1,0 +1,45 @@
+.Movies {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem 0rem 2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+
+.pagination {
+  list-style-type: none;
+  grid-column: 2 / span 3;
+  display: flex;
+  justify-content: center;
+  font-family: "monospace", sans-serif;
+}
+
+li {
+  margin: 0 10px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  transition: all 300ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+li:hover {
+  background: lightgreen;
+}
+
+li.active {
+  color: #fff;
+  background-color: #5da93c;
+}
+
+li.disabled {
+  pointer-events: none;
+}
