@@ -13,7 +13,7 @@ export default function MovieCard(props) {
             src={`https://image.tmdb.org/t/p/original/${
               movie.poster_path || movie.backdrop_path
             }`}
-            alt=""
+            alt={movie.original_title}
           />
           <div className="overlay">
             <button>View</button>
